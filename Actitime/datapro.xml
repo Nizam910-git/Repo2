@@ -1,0 +1,20 @@
+
+<suite name="Suite">
+<parameter name="url" value="http://localhost/login.do"/>
+  <test thread-count="5" name="TestA">
+ 
+  <parameter name="un" value="admin"/>
+  <parameter name="pwd" value="manager"/>
+    <classes>
+      <class name="com.actitime.testscript.DataProvide"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="TestB">
+  
+  <parameter name="un" value="admin1"/>
+  <parameter name="pwd" value="manager1"/>
+    <classes>
+      <class name="com.actitime.testscript.DataProvide"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
